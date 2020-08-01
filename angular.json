@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-exmaple-form": {
+    "workshop-angular-form": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-exmaple-form",
+            "outputPath": "dist/workshop-angular-form",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-exmaple-form:build"
+            "browserTarget": "workshop-angular-form:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-exmaple-form:build:production"
+              "browserTarget": "workshop-angular-form:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-exmaple-form:build"
+            "browserTarget": "workshop-angular-form:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-exmaple-form:serve"
+            "devServerTarget": "workshop-angular-form:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-exmaple-form:serve:production"
+              "devServerTarget": "workshop-angular-form:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-exmaple-form"
+  "defaultProject": "workshop-angular-form"
 }

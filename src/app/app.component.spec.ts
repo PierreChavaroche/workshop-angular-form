@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-exmaple-form'`, () => {
+  it(`should have as title 'workshop-angular-form'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-exmaple-form');
+    expect(app.title).toEqual('workshop-angular-form');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-exmaple-form app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('workshop-angular-form app is running!');
   });
 });

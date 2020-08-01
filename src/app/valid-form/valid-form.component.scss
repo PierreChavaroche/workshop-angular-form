@@ -1,0 +1,34 @@
+form {
+    margin: 2rem;
+    padding: 2rem;
+
+    mat-form-field {
+        display: block;
+    }
+    
+    textarea {
+        min-height: 130px;
+    }
+
+    .mat-accent {
+        background-color: #42A948 !important;
+    }
+    
+    .ng-valid[required],
+    .ng-valid.required {
+        border-bottom: 5px solid #42A948;
+    }
+    
+    ul {
+        text-align: left;
+
+        .mat-chip {
+            display: inline-block;
+            padding: 2px 5px;
+        }
+    }
+    
+    .ng-valid .mat-form-field-underline {
+        background-color: green;
+    }
+}

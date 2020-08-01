@@ -1,0 +1,23 @@
+<form [formGroup]="myForm" (ngSubmit)="submitHandler()">
+    Value: {{ myForm.value | json }}
+
+    <hr/>
+
+    <mat-form-field>
+        <input matInput placeholder="Email" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field>
+        <textarea matInput placeholder="Ihre Nachricht" formControlName="message"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-select placeholder="Beruf" formControlName="career">
+            <mat-option value="Magician">Zauberer</mat-option>
+            <mat-option value="Clown">Clown</mat-option>
+            <mat-option value="Juggler">Jongleur</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <button mat-button color="primary" type="submit" [disabled]="myForm.invalid">Submit Form</button>
+</form>

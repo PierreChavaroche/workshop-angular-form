@@ -1,6 +1,12 @@
 # AngularExmapleForm
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+Veranschaulichung der Funktionsweise von Angular Reactive Forms:
+
+- Reactive Forms
+- FormControl
+- FormGroup
+- FormBuilder
+- Validatoren
 
 ## Development server
 

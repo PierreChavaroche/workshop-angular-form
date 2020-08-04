@@ -14,12 +14,6 @@ export class ArrayFormComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const phone = this.formBuiler.group({
-      area: [],
-      prefix: [],
-      line: []
-    });
-
     this.myForm = this.formBuiler.group({
       email: '',
       phones: this.formBuiler.array([])
